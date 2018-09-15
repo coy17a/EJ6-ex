@@ -30,7 +30,7 @@ class Street {
     
 }
 
-//parks calcualtions
+//parks calcualtions`
 let parks= [];
 function newPark (name,yearofBuild,area,trees){
     parks.push(new Park(name,yearofBuild,area,trees));
