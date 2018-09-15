@@ -30,7 +30,7 @@ class Street {
     
 }
 
-//parks calcualtions`
+//parks function
 let parks= [];
 function newPark (name,yearofBuild,area,trees){
     parks.push(new Park(name,yearofBuild,area,trees));
@@ -53,21 +53,17 @@ function reportThousandTrees(parks) {
         }
     })
 }
-
+//parks creation
 newPark('Green Park',1950,0.5,538);
 newPark('National Park',1960,0.67,819);
 newPark('Oak Park',1930,0.6,1425);
 
-//streets calculations
+//streets funciton
 let streets = []; 
 function newStreet (name,yearofBuild,length,classification='normal') {
     streets.push(new Street (name,yearofBuild,length,classification));
     return; 
 }
-newStreet('Ocean Avenue',1999,2,'big');
-newStreet('Evergreeen Streeet',2008,1,'small');
-newStreet('4th Street',2015,1.5);
-newStreet('Sunset Boulevard',1982,2.6,'huge')
 
 function streetsSummary (streets) {
     let totalLength=0;
@@ -82,7 +78,11 @@ function reportStreetSize(streets) {
     streets.forEach(street => console.log(`${street.name}, built in ${street.yearofBuild}, is ${street.classification} street`));
     return;
 }
-
+//streets creation 
+newStreet('Ocean Avenue',1999,2,'big');
+newStreet('Evergreeen Streeet',2008,1,'small');
+newStreet('4th Street',2015,1.5);
+newStreet('Sunset Boulevard',1982,2.6,'huge')
 //parks Report 
 console.log('----------PARKS REPORT---------');
 reportAverageParkAge(parks);
